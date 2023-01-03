@@ -1,7 +1,7 @@
-mod app;
-mod component;
-mod util;
-mod views;
+pub mod app;
+pub mod component;
+pub mod util;
+pub mod views;
 
 use app::App;
 
