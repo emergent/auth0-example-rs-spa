@@ -1,3 +1,4 @@
+pub mod button;
 pub mod collapse;
 pub mod container;
 pub mod nav;
