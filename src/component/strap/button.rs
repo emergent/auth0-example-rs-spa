@@ -25,6 +25,8 @@ pub struct ButtonProps {
     pub id: AttrValue,
     #[prop_or_default]
     pub color: ButtonColor,
+    #[prop_or_default]
+    pub onclick: Callback<MouseEvent>,
 }
 
 #[function_component(Button)]
@@ -34,10 +36,15 @@ pub fn button(props: &ButtonProps) -> Html {
         class,
         id,
         color,
+        onclick,
     } = props;
 
     html! {
-        <button id={id} class={classes!(class.clone(), "btn", color.to_string())}>
+        <button
+            id={id}
+            class={classes!(class.clone(), "btn", color.to_string())}
+            onclick={onclick}
+        >
             { for children.iter() }
         </button>
     }
