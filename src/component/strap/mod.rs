@@ -1,6 +1,10 @@
 pub mod button;
 pub mod collapse;
 pub mod container;
+pub mod dropdown;
+pub mod dropdown_item;
+pub mod dropdown_menu;
+pub mod dropdown_toggle;
 pub mod nav;
 pub mod navbar;
 pub mod navbar_brand;
