@@ -4,6 +4,8 @@
 
 Auth0's [Single Page App](https://auth0.com/docs/quickstarts#spa) style example in Rust using [`Yew`](https://yew.rs/).
 
+![](screenshot.png)
+
 ## TODOs
 
 - [ ] silent loading
