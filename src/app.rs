@@ -56,7 +56,7 @@ pub fn app() -> Html {
             },
         }
     };
-    let scopes: Vec<String> = vec!["openid".into(), "profile".into()];
+    let scopes: Vec<String> = vec!["openid".into(), "profile".into(), "email".into()];
 
     html! {
         <OAuth2 {config} scopes={scopes}>
